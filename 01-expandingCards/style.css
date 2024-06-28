@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite NG Modern", cursive;
+}
+
+body{
+    height: 100vh;
+    background-color: #171616e3;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container .title{
+    margin: 10px auto;
+}
+
+.container .sliders{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.sliders .slider{
+    padding: 10px;
+    height: 85vh;
+    cursor: pointer;
+    width: calc(100vw/7);
+    border-radius: 7px;
+    flex: 0.5;
+    transition: flex 1s ease-in;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.slider h4{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transition: all 1.8s ease-in;
+}
+
+
+.sliders .slider.active{
+    flex: 8;
+}
+
+.sliders .slider.active h4{
+    opacity: 1;
+    
+}
+.slider-1{
+    background-image: url('./imgs/pexels-1.jpg');
+}
+.slider-2{
+    background-image: url('./imgs/pexels-2.jpg');
+}
+.slider-3{
+    background-image: url('./imgs/pexels-3.jpg');
+}
+.slider-4{
+    background-image: url('./imgs/pexels-4.jpg');
+}
+.slider-5{
+    background-image: url('./imgs/pexels-5.jpg');
+}
+.slider-6{
+    background-image: url('./imgs/pexels-6.jpg');
+}
