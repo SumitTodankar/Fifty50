@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Teko", sans-serif;
+    overflow: hidden;
+}
+
+.container{
+    width: 50vw;
+    background-color: #151414d0;
+    color: #fff;
+    padding: 25px 10px;
+    border-radius: 10px;
+    padding: 0 25px;
+}
+
+.title{
+    text-align: center;
+    margin: 20px auto 35px;
+}
+
+.progress-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.progress-container::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #fffffff0;
+    height: 3px;
+    width: 100%;
+    z-index: -1;
+}
+
+.progress-container #progress{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #0997e9;
+    height: 3px;
+    width: 10%;
+    transition: .4s ease;
+    z-index: -1;
+}
+
+.step h2{
+    border-radius: 50%;
+    padding:  10px 20px;
+    border: 5px solid #ffffffaa;
+    background-color: #000000cc;
+}
+
+.btns {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btns button{
+    padding: 10px 25px;
+    background-color: #063d5d;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+
+.btns button:hover{
+    background-color: #0c70ab;
+    scale: 1.05;
+}
